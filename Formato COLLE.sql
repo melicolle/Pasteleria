@@ -1,3 +1,4 @@
+-- Elimino si existe la funcion 
 drop function if exists f_DetalleFactura;
  
  delimiter //
@@ -19,6 +20,7 @@ case
  
 select id_pedido, id_producto, f_DetalleFactura(total) from detalle; 
 
+-- Elimino si existe la funcion 
 drop function if exists DescrRol;
 
 delimiter //
